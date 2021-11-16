@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WorldScillsTrainingTaskOne</string>
+    <string name="title_activity_sing_up">SingUpActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="sing_in_fragment_label">Войти</string>
+    <string name="sing_up_fragment_label">Зарегистрироваться</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
