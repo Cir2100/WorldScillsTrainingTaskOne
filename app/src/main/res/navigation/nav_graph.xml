@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/SingInFragment"
-        android:name="com.kurilov.worldscillstrainingtaskone.SingInFragment"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.singIn.SingInFragment"
         android:label="@string/sing_in_fragment_label"
         tools:layout="@layout/fragment_sing_in">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SingUpFragment"
-        android:name="com.kurilov.worldscillstrainingtaskone.SingUpFragment"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.singIn.SingUpFragment"
         android:label="@string/sing_up_fragment_label"
         tools:layout="@layout/fragment_sing_up">
 

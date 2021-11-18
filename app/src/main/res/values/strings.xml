@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">WorldScillsTrainingTaskOne</string>
     <string name="title_activity_sing_up">SingUpActivity</string>
+    <string name="title_activity_countries">Countries</string>
     <!-- Strings used for fragments for navigation -->
     <string name="sing_in_fragment_label">Войти</string>
     <string name="sing_up_fragment_label">Зарегистрироваться</string>

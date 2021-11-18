@@ -1,11 +1,10 @@
-package com.kurilov.worldscillstrainingtaskone
+package com.kurilov.worldscillstrainingtaskone.ui.singIn
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.kurilov.worldscillstrainingtaskone.databinding.FragmentSingInBinding
 
 /**
@@ -32,9 +31,9 @@ class SingInFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_SingInFragment_to_SingUpFragment)
-        }
+       // binding.buttonFirst.setOnClickListener {
+       //     findNavController().navigate(R.id.action_SingInFragment_to_SingUpFragment)
+       // }
     }
 
     override fun onDestroyView() {

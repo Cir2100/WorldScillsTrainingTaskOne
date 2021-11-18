@@ -1,4 +1,4 @@
-package com.kurilov.worldscillstrainingtaskone
+package com.kurilov.worldscillstrainingtaskone.ui.singIn
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.kurilov.worldscillstrainingtaskone.R
 import com.kurilov.worldscillstrainingtaskone.databinding.FragmentSingUpBinding
 
 /**
@@ -32,9 +33,6 @@ class SingUpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SingUpFragment_to_SingInFragment)
-        }
     }
 
     override fun onDestroyView() {

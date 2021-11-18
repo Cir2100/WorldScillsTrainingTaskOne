@@ -12,10 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorldScillsTrainingTaskOne">
         <activity
-            android:name=".SingInActivity"
+            android:name=".ui.singIn.SingInActivity"
             android:exported="true"
             android:label="@string/title_activity_sing_up"
-            android:theme="@style/Theme.WorldScillsTrainingTaskOne.NoActionBar" />
+            android:theme="@style/Theme.WorldScillsTrainingTaskOne.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".ui.countries.CountriesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_countries"
+            android:theme="@style/Theme.WorldScillsTrainingTaskOne.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
