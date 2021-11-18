@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.singIn.SingInFragment"
+    tools:context=".ui.singIn.singInFragment.SingInFragment"
     android:padding="30dp">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -24,8 +24,8 @@
             android:id="@+id/login_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Entry login"
-            android:singleLine="true" />
+            android:hint="Login"
+            android:singleLine="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -45,7 +45,9 @@
             android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:hint="password"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
@@ -67,13 +69,36 @@
         app:layout_constraintTop_toBottomOf="@id/remember_me_checkbox"/>
 
     <Button
+        android:id="@+id/sing_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Singin"
+        android:layout_marginTop="40dp"
         android:background="@color/green"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forgot_password_button" />
+
+    <TextView
+        android:id="@+id/not_account_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Don't have an account?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sing_in_button"/>
+
+    <TextView
+        android:id="@+id/to_sing_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SINGUP NOW"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/not_account_textView"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

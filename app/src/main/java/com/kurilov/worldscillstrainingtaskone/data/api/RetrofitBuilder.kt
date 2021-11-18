@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
 
-    private const val BASE_URL = "https://restcountries.com/v3.1/"
+    private const val BASE_URL = "http://fspobot.tw1.ru:8080/"
 
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()

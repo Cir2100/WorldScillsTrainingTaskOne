@@ -10,7 +10,7 @@ import com.kurilov.worldscillstrainingtaskone.R
 import com.kurilov.worldscillstrainingtaskone.data.classes.Country
 import com.squareup.picasso.Picasso
 
-class CountriesAdapter() : RecyclerView.Adapter<CountriesAdapter.MyViewHolder>() {
+class CountriesAdapter : RecyclerView.Adapter<CountriesAdapter.MyViewHolder>() {
 
     private var items : List<Country> = listOf()
 
@@ -24,11 +24,11 @@ class CountriesAdapter() : RecyclerView.Adapter<CountriesAdapter.MyViewHolder>()
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val item = items[position]
         holder.countryNameTextView?.text = item.name.common
-        holder.countryPopulationTextView?.text = "Популяция: " + item.population.toString()
+        holder.countryPopulationTextView?.text = "Популяция: ${item.population}"
         Picasso.get()
             .load(item.flags.png)
-            //.eror(R.drawable.ball_image)
-            .into(holder.countryFlagImageView);
+            //.error(R.drawable.ball_image)
+            .into(holder.countryFlagImageView)
 
     }
 

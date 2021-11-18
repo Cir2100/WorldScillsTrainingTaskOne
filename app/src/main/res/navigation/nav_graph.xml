@@ -7,22 +7,37 @@
 
     <fragment
         android:id="@+id/SingInFragment"
-        android:name="com.kurilov.worldscillstrainingtaskone.ui.singIn.SingInFragment"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.singIn.singInFragment.SingInFragment"
         android:label="@string/sing_in_fragment_label"
         tools:layout="@layout/fragment_sing_in">
 
         <action
             android:id="@+id/action_SingInFragment_to_SingUpFragment"
             app:destination="@id/SingUpFragment" />
+
+        <action
+            android:id="@+id/action_SingInFragment_to_CountriesActivity"
+            app:destination="@id/CountriesActivity" />
     </fragment>
     <fragment
         android:id="@+id/SingUpFragment"
-        android:name="com.kurilov.worldscillstrainingtaskone.ui.singIn.SingUpFragment"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.singIn.singUpFragment.SingUpFragment"
         android:label="@string/sing_up_fragment_label"
         tools:layout="@layout/fragment_sing_up">
 
         <action
             android:id="@+id/action_SingUpFragment_to_SingInFragment"
             app:destination="@id/SingInFragment" />
+
+        <action
+            android:id="@+id/action_SingUpFragment_to_CountriesActivity"
+            app:destination="@id/CountriesActivity" />
     </fragment>
+    <activity
+        android:id="@+id/CountriesActivity"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.countries.CountriesActivity"
+        android:label="@string/title_activity_countries"
+        tools:layout="@layout/activity_country">
+
+    </activity>
 </navigation>
