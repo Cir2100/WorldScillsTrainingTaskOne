@@ -22,7 +22,6 @@ class SingInViewModel : ViewModel() {
 
     fun loginUser(login : String, password : String) {
         viewModelScope.launch {
-            //MyResult.loading(data = null)
             try {
                 _serverAnswer.value = MyResult.success(data = apiRepo.loginUser(
                     LoginBody(

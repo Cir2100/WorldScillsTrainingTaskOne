@@ -17,7 +17,6 @@ class SingUpViewModel : ViewModel() {
 
     fun registerUser(login : String, email : String, password : String) {
         viewModelScope.launch {
-            //MyResult.loading(data = null)
             try {
                 _serverAnswer.value = MyResult.success(data = apiRepo.registerUser(
                     RegisterBody(

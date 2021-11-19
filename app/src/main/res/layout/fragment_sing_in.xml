@@ -7,39 +7,44 @@
     tools:context=".ui.singIn.singInFragment.SingInFragment"
     android:padding="30dp">
 
+    <ImageView
+        android:id="@+id/email_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/login_input_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/email_image"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_input_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:startIconDrawable="@drawable/login_image"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:startIconTintMode="screen"
-        app:boxBackgroundColor="@android:color/transparent"
-        android:background="@android:color/transparent">
+        style="@style/MyTextInput"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toEndOf="@id/email_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Login"
-            android:singleLine="true"/>
+            android:hint="name@domenname.ru"
+            android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/password_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/password_input_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/password_image"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_input_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:startIconDrawable="@drawable/password_image"
+        style="@style/MyTextInput"
         app:layout_constraintStart_toStartOf="@id/login_input_layout"
-        app:layout_constraintTop_toBottomOf="@id/login_input_layout"
-        app:startIconTintMode="screen"
-        app:boxBackgroundColor="@android:color/transparent"
-        android:background="@android:color/transparent">
+        app:layout_constraintEnd_toEndOf="@id/login_input_layout"
+        app:layout_constraintTop_toBottomOf="@id/login_input_layout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_input"
@@ -54,8 +59,7 @@
         android:id="@+id/remember_me_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintStart_toStartOf="@id/password_input_layout"
+        app:layout_constraintStart_toStartOf="@id/login_input_layout"
         app:layout_constraintTop_toBottomOf="@id/password_input_layout"
         android:text="Remember me"/>
 
@@ -70,12 +74,10 @@
 
     <Button
         android:id="@+id/sing_in_button"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Singin"
         android:layout_marginTop="40dp"
-        android:background="@color/green"
-        android:textColor="@color/white"
+        style="@style/RoundedCornerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forgot_password_button" />

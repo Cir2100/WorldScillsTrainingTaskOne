@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedCornerButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/my_button_inset</item>
+        <item name="backgroundTint">@color/button_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">150dp</item>
+    </style>
+
+    <style name="MyTextInput" parent="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="errorEnabled">true</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
