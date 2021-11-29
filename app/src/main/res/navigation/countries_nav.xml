@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/countries_nav"
+    app:startDestination="@id/CountriesListFragment">
+
+    <fragment
+        android:id="@+id/CountriesListFragment"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.countries.list.CountriesListFragment"
+        android:label="@string/countries_list_fragment_label"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_CountriesListFragment_to_CountriesDiagrammFragment"
+            app:destination="@id/CountriesDiagrammFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CountriesDiagrammFragment"
+        android:name="com.kurilov.worldscillstrainingtaskone.ui.countries.diagramm.CountriesDiagrammFragment"
+        android:label="@string/countries_diagramm_fragment_label"
+        tools:layout="@layout/fragment_diagramm">
+
+        <action
+            android:id="@+id/action_CountriesDiagrammFragment_to_CountriesListFragment"
+            app:destination="@id/CountriesListFragment" />
+    </fragment>
+
+</navigation>

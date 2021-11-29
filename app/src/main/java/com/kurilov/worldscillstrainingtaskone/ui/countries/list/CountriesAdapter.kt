@@ -1,4 +1,4 @@
-package com.kurilov.worldscillstrainingtaskone.ui.countries
+package com.kurilov.worldscillstrainingtaskone.ui.countries.list
 
 import android.view.LayoutInflater
 import android.view.View

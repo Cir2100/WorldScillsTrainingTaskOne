@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 
 class SingInViewModel : ViewModel() {
 
-    private val apiRepo = ApiRepo()
+    private val apiRepo = ApiRepo
 
     private val _serverAnswer = MutableLiveData<MyResult<SUAIChatAnswer>>()
     val serverAnswer : LiveData<MyResult<SUAIChatAnswer>>

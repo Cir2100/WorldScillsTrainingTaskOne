@@ -5,14 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.kurilov.worldscillstrainingtaskone.R
 import com.kurilov.worldscillstrainingtaskone.data.classes.Status
 import com.kurilov.worldscillstrainingtaskone.databinding.FragmentSingInBinding
-import com.kurilov.worldscillstrainingtaskone.ui.countries.CountriesViewModel
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -52,7 +50,7 @@ class SingInFragment : Fragment() {
     private fun setupUI() {
 
         binding.toSingUpButton.setOnClickListener {
-            findNavController().navigate(R.id.action_SingInFragment_to_SingUpFragment)
+            findNavController().navigate(R.id.action_CountriesListFragment_to_CountriesDiagrammFragment)
         }
 
         binding.singInButton.setOnClickListener {
