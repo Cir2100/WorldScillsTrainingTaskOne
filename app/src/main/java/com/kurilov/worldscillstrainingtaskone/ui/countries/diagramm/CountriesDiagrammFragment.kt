@@ -78,8 +78,9 @@ class CountriesDiagrammFragment : Fragment(){
     private fun setupObservers() {
         viewModel.entries.observe(viewLifecycleOwner) {
             it?.let { data->
-                binding.diagram.clear()
                 binding.diagram.data =  BarData(BarDataSet(data, "Countries"))
+                binding.diagram.notifyDataSetChanged()
+                binding.diagram.invalidate()
 
             }
         }
