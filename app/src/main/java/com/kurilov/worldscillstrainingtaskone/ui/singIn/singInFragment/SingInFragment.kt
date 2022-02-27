@@ -50,7 +50,7 @@ class SingInFragment : Fragment() {
     private fun setupUI() {
 
         binding.toSingUpButton.setOnClickListener {
-            findNavController().navigate(R.id.action_CountriesListFragment_to_CountriesDiagrammFragment)
+            findNavController().navigate(R.id.action_SingInFragment_to_SingUpFragment)
         }
 
         binding.singInButton.setOnClickListener {
